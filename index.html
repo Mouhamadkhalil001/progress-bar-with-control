@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Progress Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Progress Bar</h1>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-fill" id="progressFill"></div>
+                <span class="progress-text" id="progressText">0%</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="decreaseBtn">-10%</button>
+            <button id="resetBtn">Reset</button>
+            <button id="increaseBtn">+10%</button>
+            <button id="completeBtn">Complete</button>
+        </div>
+
+        <div class="custom-progress">
+            <input type="number" id="customProgress" min="0" max="100" placeholder="Enter value (0-100)">
+            <button id="setProgressBtn">Set Progress</button>
+        </div>
+        
+        <div class="auto-controls">
+            <button id="startAutoBtn">Auto-Fill to 70%</button>
+            <button id="stopAutoBtn">Stop Auto-Fill</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
